@@ -6,3 +6,4 @@ vid: person
 description: 'An individual of the human species. '
 hierarchy: 0
 weight: 0
+new_revision: false
