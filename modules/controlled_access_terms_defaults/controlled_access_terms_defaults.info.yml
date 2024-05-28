@@ -15,4 +15,5 @@ dependencies:
   - drupal:text
   - drupal:user
   - geolocation:geolocation
+  - rdf:rdf
 package: 'Controlled Access Terms'
