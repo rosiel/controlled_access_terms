@@ -87,6 +87,12 @@ class TypedRelationFiltered extends ProcessorPluginBase {
       'field_type' => 'typed_relation',
     ]);
 
+    $display_name_fields = $this->entityTypeManager->getStorage('field_config')->loadByProperties([
+      'entity_type' => $entity_type,
+      'field_type' => 'typed_relation_display_name',
+    ]);
+    $fields = array_merge($fields, $display_name_fields);
+
     foreach ($fields as $field) {
       // Create a "filtered" option.
       $definition = [
